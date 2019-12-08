@@ -57,7 +57,7 @@ public class LoginMultipleValuesTest {
 	
 	
 	@Test(dataProvider="inputs")
-	public void testMethod1(String userName, String password) {
+	public void testMethod1(String userName, String password) throws IOException {
 		loginPOM.sendUserName(userName);
 		loginPOM.sendPassword(password);
 		loginPOM.clickLoginBtn(); 

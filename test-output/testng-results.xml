@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43723" started-at="2019-12-08T15:59:37Z" finished-at="2019-12-08T16:00:20Z">
+  <suite name="Default suite" duration-ms="40581" started-at="2019-12-08T18:47:19Z" finished-at="2019-12-08T18:48:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43723" started-at="2019-12-08T15:59:37Z" finished-at="2019-12-08T16:00:20Z">
+    <test name="Default test" duration-ms="40581" started-at="2019-12-08T18:47:19Z" finished-at="2019-12-08T18:48:00Z">
       <class name="com.training.sanity.tests.LoginTests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@6859d167]" name="setUpBeforeClass" is-config="true" duration-ms="21" started-at="2019-12-08T15:59:37Z" finished-at="2019-12-08T15:59:37Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@d5da82c6]" name="setUpBeforeClass" is-config="true" duration-ms="18" started-at="2019-12-08T18:47:19Z" finished-at="2019-12-08T18:47:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@6859d167]" name="setUp" is-config="true" duration-ms="24755" started-at="2019-12-08T15:59:37Z" finished-at="2019-12-08T16:00:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@d5da82c6]" name="setUp" is-config="true" duration-ms="21235" started-at="2019-12-08T18:47:19Z" finished-at="2019-12-08T18:47:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dashboard_SearchRETC_011()[pri:3, instance:com.training.sanity.tests.LoginTests@6859d167]" name="dashboard_SearchRETC_011" duration-ms="16854" started-at="2019-12-08T16:00:02Z" finished-at="2019-12-08T16:00:18Z">
+        <test-method status="PASS" signature="userlinks_SearchRETC_022()[pri:4, instance:com.training.sanity.tests.LoginTests@d5da82c6]" name="userlinks_SearchRETC_022" duration-ms="17438" started-at="2019-12-08T18:47:40Z" finished-at="2019-12-08T18:47:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dashboard_SearchRETC_011 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@6859d167]" name="tearDown" is-config="true" duration-ms="2043" started-at="2019-12-08T16:00:18Z" finished-at="2019-12-08T16:00:20Z">
+        </test-method> <!-- userlinks_SearchRETC_022 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@d5da82c6]" name="tearDown" is-config="true" duration-ms="1859" started-at="2019-12-08T18:47:58Z" finished-at="2019-12-08T18:48:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -48,36 +49,57 @@ public class LoginTests {
 		Thread.sleep(1000);
 		driver.quit();
 	}
-//	@Test(priority = 1)
-//	public void apartment_SearchRETC_009() throws Exception {
-//		Thread.sleep(1000);
-//		System.out.println(driver.getTitle());
-//		loginRealEstate.clickPlots();
-//		Thread.sleep(1000);
-//		loginRealEstate.enterAddress();
-//		System.out.println("Address Entered");
-//		loginRealEstate.dropDownDisplay();
-//		Thread.sleep(1000);
-//		loginRealEstate.selectAnyRegionDropdown();
-//		loginRealEstate.clickSearch();
-//	}
-//	@Test
-//	public void enquiriesFormthrows_010() throws InterruptedException
-//	{   loginRealEstate.newLaunch();
-//	    Thread.sleep(3000);
-//		loginRealEstate.contactForm();
-//		 Thread.sleep(1000);
-//		System.out.println("Submitted  enquiriesForm");	
-//	}
+	@Test(priority = 1)
+	public void apartment_SearchRETC_009() throws Exception {
+		Thread.sleep(1000);
+		System.out.println(driver.getTitle());
+		loginRealEstate.clickPlots();
+		Thread.sleep(5000);
+		loginRealEstate.enterAddress();
+		System.out.println("Address Entered");
+		loginRealEstate.dropDownDisplay();
+		Thread.sleep(1000);
+		loginRealEstate.selectAnyRegionDropdown();
+		loginRealEstate.clickSearch();
+		Thread.sleep(5000);
+		screenShot.captureScreenShot("Capture_apartment_SearchRETC_009");
+		Thread.sleep(5000);
+		
+	}
+
 	
-	@Test (priority = 3)
+	@Test (priority = 2)
 	public void dashboard_SearchRETC_011()  throws Exception {
 		Thread.sleep(1000);
 		loginRealEstate.realEstateLogin();
 		loginRealEstate.Signin();
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		System.out.println("DashBoard Page displyed");
+		screenShot.captureScreenShot("Capture_apartment_SearchRETC_011");
+		Thread.sleep(5000);
 	}
+	//reset password link is not working
+//	@Test (priority = 3)
+//	public void resetPassword_SearchRETC_012() throws InterruptedException, IOException
+//	{   Thread.sleep(1000);
+//		loginRealEstate.recoverPassword();
+//		Thread.sleep(5000);
+//		screenShot.captureScreenShot("Capture_apartment_SearchRETC_012");
+//		Thread.sleep(2000);
+//	}
 	
+	@Test (priority = 4)
+	public void userlinks_SearchRETC_022() throws InterruptedException, IOException
+	{   Thread.sleep(1000);
+	
+	    loginRealEstate.realEstateLogin();
+	    loginRealEstate.Signin();
+		loginRealEstate.changeRole();
+		Thread.sleep(2000);
+		screenShot.captureScreenShot("Capture_apartment_SearchRETC_022");
+		
+		Thread.sleep(2000);
+		
+	}
 	
 }

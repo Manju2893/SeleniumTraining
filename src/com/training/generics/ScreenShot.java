@@ -1,9 +1,12 @@
 package com.training.generics;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -64,9 +67,12 @@ public class ScreenShot {
 	}
 	
 
-	public void captureScreenShot(String fileName){
+	public void captureScreenShot(String fileName) throws IOException{
+		Properties properties = new Properties();
+		FileInputStream inStream = new FileInputStream("./resources/others.properties");
+		properties.load(inStream);
 		
-		String path =  "C:\\Users\\Naveen\\Desktop\\screenshots\\";
+		String path = properties.getProperty("screenshot.folder");
 	
 		// 1. create file 
 		// 2. capture screenshot from selenium 

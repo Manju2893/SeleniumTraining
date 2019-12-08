@@ -55,7 +55,7 @@ public class LoginDBTest {
 
 
 	@Test(dataProvider = "db-inputs", dataProviderClass = LoginDataProviders.class)
-	public void loginDBTest(String userName, String password) {
+	public void loginDBTest(String userName, String password) throws IOException {
 		// for demonstration 
 //		genericMethods.getElement("login", "id"); 
 				

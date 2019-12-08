@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class LoginRealEstate {
 	
@@ -36,23 +37,8 @@ public class LoginRealEstate {
 	@FindBy(css="button.button")
 	private WebElement Search;
 	
-	//RETC_010
-	
-	@FindBy(id="/html/body/div[1]/header/div[2]/nav/div/ul/li[2]/a")
-	private WebElement NewLaunch;
-	@FindBy(xpath="//*[@id='wrapper']/div[3]/div[2]/div/div/div[2]/div/div[2]/div/a/div[2]/ul/li[1]/span")
-	private WebElement NewLaunch1;
-	@FindBy(name="your-name")
-	private WebElement Name;
-	@FindBy(name="your-email")
-	private WebElement Email;
-	@FindBy(name="your-subject")
-	private WebElement Subject;
-	@FindBy(name="your-message")
-	private WebElement Message;
-	
-	
 	//RETC_011
+	
 	@FindBy(xpath="//*[@class='sign-in']")
 	private WebElement LogIn;
 	@FindBy(id="user_login")
@@ -64,15 +50,27 @@ public class LoginRealEstate {
 	@FindBy(xpath="//*[@type='submit']")
 	private WebElement Send;
 	
+	
 	//RETC_012
-	@FindBy(xpath="//*[@id='tab1']/form/p[4]")
+	
+	@FindBy(xpath="//*[@class='login']/p[4]/a")
 	private WebElement lostPassword;
 	@FindBy(id="user_login")
 	private WebElement EmailAddress;
 	@FindBy(xpath="//*[@value='Reset Password']")
 	private WebElement ResetPassword;
 	
-	
+	//RETC_022
+	@FindBy(id="menu-users")
+	private WebElement users;
+	@FindBy(id="cb-select-all-1")
+	private WebElement Username_checkbox;
+	@FindBy(id="new_role")
+	private WebElement Newrole;
+	@FindBy(id="changeit")
+	private WebElement Change;
+	@FindBy(xpath="//*[@id='wpbody-content']/div[3]/div[3]")
+	private WebElement ChangeroleMessage;
 	
 	public void clickPlots() {
 		plots.click(); 
@@ -132,41 +130,33 @@ public class LoginRealEstate {
 	public void Signin() throws InterruptedException
 	{
 		Send.click();
-		
-		Thread.sleep(5000);
-		System.out.println("Title"+driver.getTitle());
-		
-	}
+		System.out.println("Logged In");
 	
-	public void newLaunch() throws InterruptedException
-	{
-		NewLaunch.click();
-		
-		System.out.println("Clicked newlaunch");
-		NewLaunch1.click();
-		Thread.sleep(2000);
-		System.out.println("Clicked newlaunch1");
-	}
-	
-	public void contactForm() {
-		Name.sendKeys("reva");
-		Email.sendKeys("revasharma@gmail.com");
-		Subject.sendKeys("apartments");
-		Message.sendKeys("looking for an apartments");
-		Send.click();
-		
-		
 	}
 	
 	public void recoverPassword() throws InterruptedException
 	{
 		LogIn.click();
+		System.out.println("Login clicked");
 		lostPassword.click();
-		Thread.sleep(2000);
-		EmailAddress.sendKeys("revasharma@gmail.com");
+		Thread.sleep(10000);
+		System.out.println("LostPassword clicked");
+		EmailAddress.sendKeys("manju.lak2806@gmail.com");
+		System.out.println("Email Address entred");
 		ResetPassword.click();
+		Thread.sleep(7000);
 	}
 
-	
-	
+	public void changeRole() throws InterruptedException
+	{
+		users.click();
+		Username_checkbox.click();
+	    WebElement testDropDown = Newrole;  
+	    Select dropdown = new Select(testDropDown); 
+	    dropdown.selectByVisibleText("Agent");
+	    Change.click();
+	    System.out.println(ChangeroleMessage.getText());
+		
+		Thread.sleep(2000);
+	}
 }
