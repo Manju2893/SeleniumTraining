@@ -78,15 +78,7 @@ public class LoginTests {
 		screenShot.captureScreenShot("Capture_apartment_SearchRETC_011");
 		Thread.sleep(5000);
 	}
-	//reset password link is not working
-//	@Test (priority = 3)
-//	public void resetPassword_SearchRETC_012() throws InterruptedException, IOException
-//	{   Thread.sleep(1000);
-//		loginRealEstate.recoverPassword();
-//		Thread.sleep(5000);
-//		screenShot.captureScreenShot("Capture_apartment_SearchRETC_012");
-//		Thread.sleep(2000);
-//	}
+	
 	
 	@Test (priority = 4)
 	public void userlinks_SearchRETC_022() throws InterruptedException, IOException
