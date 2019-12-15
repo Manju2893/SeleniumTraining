@@ -3,7 +3,6 @@ package com.training.realestate;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.By;
@@ -14,149 +13,203 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class LoginRealEstate {
-	
+
 	private WebDriver driver;
-	
+
 	public LoginRealEstate(WebDriver driver) {
-		this.driver = driver; 
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 //RETC_009
-	
-	@FindBy(xpath ="//*[@id='menu-item-570']/a")
+
+	@FindBy(xpath = "//*[@id='menu-item-570']/a")
 	private WebElement plots;
-	@FindBy(id="keyword_search")
+	@FindBy(id = "keyword_search")
 	private WebElement addTextBox;
-	@FindBy(css="#_property_type_chosen > a")
+	@FindBy(css = "#_property_type_chosen > a")
 	private WebElement propertyTyp;
 //	@FindBy(xpath="//*[@id='_property_type_chosen']/div/ul/li")
 //	private WebElement dropdown;
-	@FindBy(xpath="//*[@id='realteo-search-form']/div[2]/div[2]/div/a/div")
+	@FindBy(xpath = "//span[contains(text(),'Any Regions')]")
 	private WebElement anyRegion;
-	@FindBy(css="button.button")
-	private WebElement Search;
-	
-	//RETC_011
-	
-	@FindBy(xpath="//*[@class='sign-in']")
+	@FindBy(css = "button.button")
+	public WebElement Search;
+
+	// RETC_011
+
+	@FindBy(xpath = "//*[@class='sign-in']")
 	private WebElement LogIn;
-	@FindBy(id="user_login")
+	@FindBy(id = "user_login")
 	private WebElement Username;
-	@FindBy(id="user_pass")
+	@FindBy(id = "user_pass")
 	private WebElement Password;
-	@FindBy(className="login")
+	@FindBy(className = "login")
 	private WebElement SignIn;
-	@FindBy(xpath="//*[@type='submit']")
-	private WebElement Send;
-	
-	
-	//RETC_012
-	
-	@FindBy(xpath="//*[@class='login']/p[4]/a")
-	private WebElement lostPassword;
-	@FindBy(id="user_login")
-	private WebElement EmailAddress;
-	@FindBy(xpath="//*[@value='Reset Password']")
-	private WebElement ResetPassword;
-	
-	//RETC_022
-	@FindBy(id="menu-users")
+	@FindBy(xpath = "//*[@type='submit']")
+	public WebElement Send;
+
+	// RETC_022
+	@FindBy(id = "menu-users")
 	private WebElement users;
-	@FindBy(id="cb-select-all-1")
+	@FindBy(id = "cb-select-all-1")
 	private WebElement Username_checkbox;
-	@FindBy(id="new_role")
+	@FindBy(id = "new_role")
 	private WebElement Newrole;
-	@FindBy(id="changeit")
+	@FindBy(id = "changeit")
 	private WebElement Change;
-	@FindBy(xpath="//*[@id='wpbody-content']/div[3]/div[3]")
+	@FindBy(xpath = "//*[@id='wpbody-content']/div[3]/div[3]")
 	private WebElement ChangeroleMessage;
-	
+
+	// RETC_027
+	@FindBy(xpath = "//*[@id='menu-posts-property']/a")
+	private WebElement Properties;
+	@FindBy(xpath = "//*[@id='menu-posts-property']/ul/li[4]/a")
+	private WebElement Features;
+	@FindBy(id = "tag-name")
+	public WebElement Name;
+	@FindBy(id = "tag-slug")
+	public WebElement slug;
+	@FindBy(id = "tag-description")
+	public WebElement description;
+	@FindBy(id = "submit")
+	public WebElement Newfeature;
+	@FindBy(id = "tag-search-input")
+	private WebElement SearchBox;
+	@FindBy(id = "search-submit")
+	private WebElement SearchFeatures;
+
+	// RETC_039
+
+	@FindBy(xpath = "//div[contains(text(),'Posts')]")
+	public WebElement Posts;
+	@FindBy(xpath = "//li[@id='menu-posts']//ul[@class='wp-submenu wp-submenu-wrap']//li//a[contains(text(),'Categories')]")
+
+	public WebElement Categories;
+	@FindBy(xpath = "//*[@id='submit']")
+	public WebElement AddNewCatergory;
+	@FindBy(linkText = "All Posts")
+	public WebElement AllPosts;
+	@FindBy(xpath = "//a[@class='page-title-action']")
+	//// tr[@id='post-7686']//a[@class='row-title'][contains(text(),'New Launches')]
+	public WebElement Addnew;
+	@FindBy(id = "title")
+	public WebElement titlebox;
+	@FindBy(xpath = "//textarea[@id='content']")
+	public WebElement content;
+	@FindBy(id = "in-category-717")
+	public WebElement category_Checkbox;
+	@FindBy(id = "publish")
+	public WebElement publish;
+	@FindBy(xpath = "//a[contains(text(),'View post')]")
+	public WebElement Viewpost;
+//	@FindBy(xpath="//span[@id='sample-permalink")
+//	public WebElement Viewpost;
+	@FindBy(xpath = "//h2[contains(text(),'Blog')]")
+	public WebElement blog;
+
+	// RETC_046
+
+	@FindBy(xpath = "//div[contains(text(),'Properties')]")
+	public WebElement properties;
+	@FindBy(xpath = "//input[@id='in-property_feature-560']")
+	public WebElement Featurecheckbox;
+	@FindBy(xpath = "//input[@id='in-region-558']")
+	public WebElement Regioncheckbox;
+
+	// RETC_047
+
+	@FindBy(xpath = "//ul[@class='wp-submenu wp-submenu-wrap']//a[contains(text(),'Features')]")
+	public WebElement Feature;
+	@FindBy(xpath = "//select[@id='parent']")
+	public WebElement ParentFeature;
+
 	public void clickPlots() {
-		plots.click(); 
-		
+		plots.click();
+
 	}
 
-	public void enterAddress()
-	{
+	public void enterAddress() {
 		addTextBox.click();
-	    addTextBox.sendKeys("Electronic City");
+		addTextBox.sendKeys("Electronic City");
 	}
-	
-	public void dropDownDisplay()
-	{
-	   propertyTyp.click();
-	   System.out.println("propertyTyp clicked ");
-	   List<WebElement> options=driver.findElements(By.xpath("//*[@id='_property_type_chosen']/div/ul/li"));
-       for(WebElement we:options)
-         {
-	        System.out.println(we.getText());
-         }
-       System.out.println("Dropdown values printed  ");
-       options.get(3).click();
-       System.out.println("plots selected ");
-       
-    }
-	
-	public void selectAnyRegionDropdown()
-	{
-		 anyRegion.click();
-		 List<WebElement> dropdownoptions=driver.findElements(By.xpath("//*[@id='realteo-search-form']/div[2]/div[2]/div/div/ul/li"));
-         for(WebElement we:dropdownoptions)
-        {
- 	     System.out.println(we.getText());
-        }
-         System.out.println("Dropdown values printed  "); 
-         dropdownoptions.get(6).click();
-         System.out.println("Centarl selected ");
-         
+
+	public void dropDownDisplay() {
+		propertyTyp.click();
+		System.out.println("propertyTyp clicked ");
+		List<WebElement> options = driver.findElements(By.xpath("//*[@id='_property_type_chosen']/div/ul/li"));
+		for (WebElement we : options) {
+			System.out.println(we.getText());
+		}
+		System.out.println("Dropdown values printed  ");
+		options.get(3).click();
+		System.out.println("plots selected ");
+
 	}
-	
-	public void clickSearch()
-	{
+
+	public void selectAnyRegionDropdown() {
+		anyRegion.click();
+		List<WebElement> dropdownoptions = driver
+				.findElements(By.xpath("//*[@id='realteo-search-form']/div[2]/div[2]/div/div/ul/li"));
+		for (WebElement we : dropdownoptions) {
+			System.out.println(we.getText());
+		}
+		System.out.println("Dropdown values printed  ");
+		dropdownoptions.get(6).click();
+		System.out.println("Centarl selected ");
+
+	}
+
+	public void clickSearch() {
 		Search.click();
 	}
-	
-	public void realEstateLogin() throws InterruptedException
-	{
+
+	public void realEstateLogin() throws InterruptedException {
 		LogIn.click();
 		System.out.println("Login clicked");
 		Username.sendKeys("admin");
 		System.out.println("entred username");
 		Password.sendKeys("admin@123");
-		
+
 		System.out.println("entred Password");
 	}
-	public void Signin() throws InterruptedException
-	{
+
+	public void Signin() throws InterruptedException {
 		Send.click();
 		System.out.println("Logged In");
-	
-	}
-	
-	public void recoverPassword() throws InterruptedException
-	{
-		LogIn.click();
-		System.out.println("Login clicked");
-		lostPassword.click();
-		Thread.sleep(10000);
-		System.out.println("LostPassword clicked");
-		EmailAddress.sendKeys("manju.lak2806@gmail.com");
-		System.out.println("Email Address entred");
-		ResetPassword.click();
-		Thread.sleep(7000);
+
 	}
 
-	public void changeRole() throws InterruptedException
-	{
+	public void changeRole() throws InterruptedException {
 		users.click();
 		Username_checkbox.click();
-	    WebElement testDropDown = Newrole;  
-	    Select dropdown = new Select(testDropDown); 
-	    dropdown.selectByVisibleText("Agent");
-	    Change.click();
-	    System.out.println(ChangeroleMessage.getText());
-		
+		WebElement testDropDown = Newrole;
+		Select dropdown = new Select(testDropDown);
+		dropdown.selectByVisibleText("Agent");
+		Change.click();
+		System.out.println(ChangeroleMessage.getText());
+
 		Thread.sleep(2000);
 	}
+
+	public void properties() throws InterruptedException {
+
+		System.out.println("Login clicked");
+		Properties.click();
+		Features.click();
+		Thread.sleep(3000);
+		Name.sendKeys("New Launches");
+		slug.sendKeys("launch");
+		description.sendKeys("New Launches of vilas, apartments, flats");
+		Newfeature.click();
+		Thread.sleep(3000);
+
+	}
+
+	public void plots() throws InterruptedException {
+
+		System.out.println("Login clicked");
+		Properties.click();
+	}
+
 }

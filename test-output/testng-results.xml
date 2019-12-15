@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="106481" started-at="2019-12-08T19:01:47Z" finished-at="2019-12-08T19:03:33Z">
+  <suite name="Default suite" duration-ms="273555" started-at="2019-12-15T19:06:45Z" finished-at="2019-12-15T19:11:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="106481" started-at="2019-12-08T19:01:47Z" finished-at="2019-12-08T19:03:33Z">
-      <class name="com.training.sanity.tests.LoginTests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="setUpBeforeClass" is-config="true" duration-ms="19" started-at="2019-12-08T19:01:47Z" finished-at="2019-12-08T19:01:47Z">
+    <test name="Default test" duration-ms="273555" started-at="2019-12-15T19:06:45Z" finished-at="2019-12-15T19:11:19Z">
+      <class name="com.training.realestatete.tests.RealEstateTest_MediumCases">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="setUpBeforeClass" is-config="true" duration-ms="17" started-at="2019-12-15T19:06:45Z" finished-at="2019-12-15T19:06:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="setUp" is-config="true" duration-ms="14288" started-at="2019-12-08T19:01:47Z" finished-at="2019-12-08T19:02:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="setUp" is-config="true" duration-ms="24986" started-at="2019-12-15T19:06:45Z" finished-at="2019-12-15T19:07:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="apartment_SearchRETC_009()[pri:1, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="apartment_SearchRETC_009" duration-ms="25394" started-at="2019-12-08T19:02:01Z" finished-at="2019-12-08T19:02:27Z">
+        <test-method status="PASS" signature="propertylinks_SearchRETC_039()[pri:1, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="propertylinks_SearchRETC_039" duration-ms="66625" started-at="2019-12-15T19:07:10Z" finished-at="2019-12-15T19:08:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- apartment_SearchRETC_009 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="tearDown" is-config="true" duration-ms="1784" started-at="2019-12-08T19:02:27Z" finished-at="2019-12-08T19:02:28Z">
+        </test-method> <!-- propertylinks_SearchRETC_039 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="tearDown" is-config="true" duration-ms="1917" started-at="2019-12-15T19:08:17Z" finished-at="2019-12-15T19:08:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="setUp" is-config="true" duration-ms="13676" started-at="2019-12-08T19:02:28Z" finished-at="2019-12-08T19:02:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="setUp" is-config="true" duration-ms="29491" started-at="2019-12-15T19:08:19Z" finished-at="2019-12-15T19:08:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dashboard_SearchRETC_011()[pri:2, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="dashboard_SearchRETC_011" duration-ms="16141" started-at="2019-12-08T19:02:42Z" finished-at="2019-12-08T19:02:58Z">
+        <test-method status="PASS" signature="propertylinks_SearchRETC_046()[pri:2, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="propertylinks_SearchRETC_046" duration-ms="44242" started-at="2019-12-15T19:08:48Z" finished-at="2019-12-15T19:09:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dashboard_SearchRETC_011 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="tearDown" is-config="true" duration-ms="1776" started-at="2019-12-08T19:02:58Z" finished-at="2019-12-08T19:03:00Z">
+        </test-method> <!-- propertylinks_SearchRETC_046 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="tearDown" is-config="true" duration-ms="1924" started-at="2019-12-15T19:09:33Z" finished-at="2019-12-15T19:09:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="setUp" is-config="true" duration-ms="15000" started-at="2019-12-08T19:03:00Z" finished-at="2019-12-08T19:03:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="setUp" is-config="true" duration-ms="29576" started-at="2019-12-15T19:09:35Z" finished-at="2019-12-15T19:10:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="userlinks_SearchRETC_022()[pri:4, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="userlinks_SearchRETC_022" duration-ms="16440" started-at="2019-12-08T19:03:15Z" finished-at="2019-12-08T19:03:31Z">
+        <test-method status="PASS" signature="new_Feature_047()[pri:3, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="new_Feature_047" duration-ms="72816" started-at="2019-12-15T19:10:04Z" finished-at="2019-12-15T19:11:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userlinks_SearchRETC_022 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@e4c99457]" name="tearDown" is-config="true" duration-ms="1909" started-at="2019-12-08T19:03:31Z" finished-at="2019-12-08T19:03:33Z">
+        </test-method> <!-- new_Feature_047 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="tearDown" is-config="true" duration-ms="1913" started-at="2019-12-15T19:11:17Z" finished-at="2019-12-15T19:11:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.LoginTests -->
+      </class> <!-- com.training.realestatete.tests.RealEstateTest_MediumCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
