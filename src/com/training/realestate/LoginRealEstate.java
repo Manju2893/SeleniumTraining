@@ -124,6 +124,84 @@ public class LoginRealEstate {
 	@FindBy(xpath = "//select[@id='parent']")
 	public WebElement ParentFeature;
 
+	// Complex
+	// RETC_76
+
+	@FindBy(xpath = "//div[contains(text(),'Users')]")
+	public WebElement Users;
+	@FindBy(xpath = "//li[@id='menu-users']//ul[@class='wp-submenu wp-submenu-wrap']//li//a[contains(text(),'Add New')]")
+	public WebElement Users_Addnew;
+
+	@FindBy(id = "user_login")
+	public WebElement User_name;
+	@FindBy(id = "email")
+	public WebElement User_email;
+	@FindBy(id = "first_name")
+	public WebElement User_first_name;
+	@FindBy(id = "last_name")
+	public WebElement User_last_name;
+	@FindBy(id = "url")
+	public WebElement User_url;
+	@FindBy(xpath = "//button[contains(@class,'button wp-generate-pw hide-if-no-js')]")
+	public WebElement User_showPassword;
+	@FindBy(xpath = "//span[contains(text(),'Hide')]")
+	public WebElement User_Hide;
+	@FindBy(xpath = "//span[contains(text(),'Cancel')]")
+	public WebElement User_Cancel;
+	@FindBy(id = "pass1-text")
+	public WebElement User_PasswordText;
+	@FindBy(xpath = "//select[@id='role']")
+	public WebElement User_role;
+	@FindBy(id = "createusersub")
+	public WebElement AddNewUser;
+	@FindBy(xpath = "//a[contains(text(),'Edit user')]")
+	public WebElement CreatedNewUser;
+    @FindBy(xpath = "//p[contains(text(),': This username is already registered. Please choo')]")
+	public WebElement UserName_Error;
+    @FindBy(xpath = "//p[contains(text(),': This email is already registered, please choose')]")
+	public WebElement Email_Error;
+    
+    
+    
+	// RETC_80
+
+	@FindBy(id = "_price")
+	public WebElement Price;
+	@FindBy(xpath = "//input[@id='_price_per']")
+	public WebElement Price_per;
+	@FindBy(linkText = "Main Details")
+	public WebElement MainDetails;
+	@FindBy(id = "_status")
+	public WebElement status;
+	@FindBy(id = "_location")
+	public WebElement location;
+	@FindBy(id = "_possession")
+	public WebElement possession;
+	@FindBy(linkText = "Location")
+	public WebElement Location_tab;
+	@FindBy(xpath = "//input[@id='_friendly_address']")
+	public WebElement Address;
+	@FindBy(xpath = "//input[@id='_address']")
+	public WebElement MapAddress;
+	@FindBy(xpath = "//input[@id='_geolocation_lat']")
+	public WebElement latitude;
+	@FindBy(xpath = "//input[@id='_geolocation_long']")
+	public WebElement Longitude;
+	@FindBy(linkText = "Details")
+	public WebElement Details_tab;
+	@FindBy(xpath = "//input[@id='_storage_room']")
+	public WebElement Storage;
+	@FindBy(xpath = "//*[@class='categorychecklist-holder']//following-sibling::span[contains(text(),'Central Bangalore')]")
+	public WebElement Checkbox1;
+	@FindBy(xpath = "//img[contains(@class,'avatar avatar-26 photo')]")
+	public WebElement logouticon;
+	@FindBy(xpath = "//a[contains(@class,'ab-item')][contains(text(),'Log Out')]")
+	public WebElement Logout;
+	@FindBy(xpath = "//a[contains(text(),'Real Estate')]")
+	public WebElement RealEstate;
+
+	//
+
 	public void clickPlots() {
 		plots.click();
 

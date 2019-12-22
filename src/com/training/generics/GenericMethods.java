@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.server.handler.ExecuteScript;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -99,17 +100,19 @@ public class GenericMethods {
 		we.click();
 	}
 
-
 	public void jseClick(WebDriver driver, WebElement we) {
 
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", we);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", we);
+
+		// ((JavascriptExecutor) driver).executeScript("arguments[0].click();", we);
 	}
 
 	public void mouseAction(WebDriver driver, WebElement we) {
 
 		Actions builder = new Actions(driver);
-		builder.moveToElement(we).click(we);
-		builder.perform();
+		builder.moveToElement(we).perform();;
+		//builder.perform();
 		System.out.println("Done Mouse hover on 'Music' from Menu");
 
 	}
@@ -120,9 +123,9 @@ public class GenericMethods {
 		System.out.println("window.scrollBy");
 	}
 
-	public void scrollDownAction() {
+	public void scrollDownToUpnAction() {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,250)");
+		jse.executeScript("window.scrollTo(0,-250)");
 		System.out.println("window.scrollBy");
 	}
 
@@ -133,5 +136,41 @@ public class GenericMethods {
 		dropdown.selectByVisibleText(s);
 		we.click();
 		System.out.println("Dropdown selected");
+	}
+
+	// to clear
+
+	public void clearExistingText(WebElement we) {
+		we.clear();
+	}
+
+	// alert popup
+	public void alertPopup(WebDriver driver, WebElement we) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("alert('Hello world');", we);
+	}
+
+	// get innertext
+
+	public void innerText(WebDriver driver, WebElement we) {
+		String S = ((JavascriptExecutor) driver).executeScript("return document.documentElement.innerTest;", we).toString();
+		System.out.println(S);
+	}
+
+	//Diffrent Navigation
+	public void diffNavigation(WebDriver driver) {
+		((JavascriptExecutor) driver).executeScript("window.location='https://www.stqatools.com/'");
+
+	}
+	
+	//enter value 
+	public void enterValue(WebDriver driver,WebElement we) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("document.getElementId('we').value='text to be enterd'");
+	}
+	//refresh page
+	public void refreshPage(WebDriver driver) {
+		
+		 ((JavascriptExecutor) driver).executeScript("history.go(0)");
 	}
 }

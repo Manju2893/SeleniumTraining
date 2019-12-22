@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.realestatete.tests.RealEstateTest_MediumCases">
+      <class name="com.training.realestatete.tests.RealEstateTest_ComplecCases">
         <methods>
           <include name="setUpBeforeClass"/>
-          <include name="new_Feature_047"/>
           <include name="setUp"/>
+          <include name="user_AddNewRETC_076"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.training.realestatete.tests.RealEstateTest_MediumCases -->
+      </class> <!-- com.training.realestatete.tests.RealEstateTest_ComplecCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

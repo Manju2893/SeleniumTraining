@@ -16,7 +16,7 @@ import com.training.realestate.LoginRealEstate;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class RealEstateTest {
+public class RealEstateTest_SimpleCases {
 
 	private WebDriver driver;
 	private String baseUrl;
@@ -49,7 +49,7 @@ public class RealEstateTest {
 		driver.quit();
 	}
 
-	@Test(priority = 1)
+	@Test(enabled =false)
 	public void apartment_SearchRETC_009() throws Exception {
 		Thread.sleep(1000);
 		System.out.println(driver.getTitle());

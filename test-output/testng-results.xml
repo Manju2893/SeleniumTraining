@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="273555" started-at="2019-12-15T19:06:45Z" finished-at="2019-12-15T19:11:19Z">
+  <suite name="Default suite" duration-ms="194595" started-at="2019-12-22T08:47:53Z" finished-at="2019-12-22T08:51:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="273555" started-at="2019-12-15T19:06:45Z" finished-at="2019-12-15T19:11:19Z">
-      <class name="com.training.realestatete.tests.RealEstateTest_MediumCases">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="setUpBeforeClass" is-config="true" duration-ms="17" started-at="2019-12-15T19:06:45Z" finished-at="2019-12-15T19:06:45Z">
+    <test name="Default test" duration-ms="194595" started-at="2019-12-22T08:47:53Z" finished-at="2019-12-22T08:51:08Z">
+      <class name="com.training.realestatete.tests.RealEstateTest_ComplecCases">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-12-22T08:47:53Z" finished-at="2019-12-22T08:47:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="setUp" is-config="true" duration-ms="24986" started-at="2019-12-15T19:06:45Z" finished-at="2019-12-15T19:07:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="setUp" is-config="true" duration-ms="18643" started-at="2019-12-22T08:47:53Z" finished-at="2019-12-22T08:48:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="propertylinks_SearchRETC_039()[pri:1, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="propertylinks_SearchRETC_039" duration-ms="66625" started-at="2019-12-15T19:07:10Z" finished-at="2019-12-15T19:08:17Z">
+        <test-method status="PASS" signature="user_AddNewRETC_076()[pri:1, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="user_AddNewRETC_076" duration-ms="40709" started-at="2019-12-22T08:48:12Z" finished-at="2019-12-22T08:48:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- propertylinks_SearchRETC_039 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="tearDown" is-config="true" duration-ms="1917" started-at="2019-12-15T19:08:17Z" finished-at="2019-12-15T19:08:19Z">
+        </test-method> <!-- user_AddNewRETC_076 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="tearDown" is-config="true" duration-ms="1852" started-at="2019-12-22T08:48:53Z" finished-at="2019-12-22T08:48:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="setUp" is-config="true" duration-ms="29491" started-at="2019-12-15T19:08:19Z" finished-at="2019-12-15T19:08:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="setUp" is-config="true" duration-ms="17103" started-at="2019-12-22T08:48:55Z" finished-at="2019-12-22T08:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="propertylinks_SearchRETC_046()[pri:2, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="propertylinks_SearchRETC_046" duration-ms="44242" started-at="2019-12-15T19:08:48Z" finished-at="2019-12-15T19:09:33Z">
+        <test-method status="PASS" signature="multiple_NewFeature_079()[pri:2, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="multiple_NewFeature_079" duration-ms="32285" started-at="2019-12-22T08:49:12Z" finished-at="2019-12-22T08:49:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- propertylinks_SearchRETC_046 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="tearDown" is-config="true" duration-ms="1924" started-at="2019-12-15T19:09:33Z" finished-at="2019-12-15T19:09:35Z">
+        </test-method> <!-- multiple_NewFeature_079 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="tearDown" is-config="true" duration-ms="1753" started-at="2019-12-22T08:49:44Z" finished-at="2019-12-22T08:49:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="setUp" is-config="true" duration-ms="29576" started-at="2019-12-15T19:09:35Z" finished-at="2019-12-15T19:10:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="setUp" is-config="true" duration-ms="16985" started-at="2019-12-22T08:49:46Z" finished-at="2019-12-22T08:50:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="new_Feature_047()[pri:3, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="new_Feature_047" duration-ms="72816" started-at="2019-12-15T19:10:04Z" finished-at="2019-12-15T19:11:17Z">
+        <test-method status="PASS" signature="property_Details_80()[pri:3, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="property_Details_80" duration-ms="63433" started-at="2019-12-22T08:50:03Z" finished-at="2019-12-22T08:51:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- new_Feature_047 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_MediumCases@b27da147]" name="tearDown" is-config="true" duration-ms="1913" started-at="2019-12-15T19:11:17Z" finished-at="2019-12-15T19:11:19Z">
+        </test-method> <!-- property_Details_80 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.realestatete.tests.RealEstateTest_ComplecCases@b895e989]" name="tearDown" is-config="true" duration-ms="1800" started-at="2019-12-22T08:51:06Z" finished-at="2019-12-22T08:51:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.realestatete.tests.RealEstateTest_MediumCases -->
+      </class> <!-- com.training.realestatete.tests.RealEstateTest_ComplecCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -68,7 +68,9 @@ public class RealEstateTest_MediumCases {
 		genericMethods.clickToElement(loginRealEstate.Send);
 		Thread.sleep(5000);
 		Thread.sleep(3000);
-		genericMethods.clickToElement(loginRealEstate.Posts);
+	  genericMethods.clickToElement(loginRealEstate.Posts);
+
+		
 		Thread.sleep(3000);
 		genericMethods.clickToElement(loginRealEstate.Categories);
 		Thread.sleep(1000);
@@ -89,10 +91,15 @@ public class RealEstateTest_MediumCases {
 		Thread.sleep(5000);
 		genericMethods.jseClick(driver, loginRealEstate.publish);
 		Thread.sleep(5000);
+		System.out.println("Failed");
 		System.out.println("published");
 		genericMethods.clickToElement(loginRealEstate.Viewpost);
 		System.out.println("postviewd");
 		System.out.println(loginRealEstate.blog.getText());
+		JavascriptExecutor js= (JavascriptExecutor) driver;
+		String s= js.executeScript("return document.documentElement.innerText;").toString();
+		System.out.println(s);
+		
 		Thread.sleep(5000);
 		screenShot.captureScreenShot("Capture_apartment_SearchRETC_039");
 
@@ -122,7 +129,6 @@ public class RealEstateTest_MediumCases {
 		System.out.println("post viewd");
 		Thread.sleep(5000);
 		screenShot.captureScreenShot("Capture_apartment_SearchRETC_046");
-		
 
 	}
 
